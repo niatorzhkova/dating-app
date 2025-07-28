@@ -369,3 +369,7 @@ html {
   overflow: visible;
   z-index: 1000;
 }
+.owl-carousel {
+  overflow: hidden;
+  --webkit-overflow-scrolling: touch;
+}
