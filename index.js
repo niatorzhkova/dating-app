@@ -89,6 +89,7 @@ $.getJSON("./json/girls.json", function (data) {
     touchDrag: true,
     smartSpeed: 300,
     dragEndSpeed: 300,
+    loop: true,
     responsive: {
       0: {
         items: 1,
