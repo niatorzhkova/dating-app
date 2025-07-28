@@ -93,9 +93,9 @@ $.getJSON("./json/girls.json", function (data) {
     resistance: true,
     resistanceRatio: 0.85,
 
-    // iOS-specific fixes
-    edgeSwipeDetection: true,
-    iOSEdgeSwipeDetection: true,
+    // // iOS-specific fixes
+    // edgeSwipeDetection: true,
+    // iOSEdgeSwipeDetection: true,
 
     // Smooth transitions
     speed: 300,
