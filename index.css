@@ -275,6 +275,7 @@ html {
 }
 
 .top {
+  min-height: 50vh;
   max-height: 50vh;
   overflow: hidden;
   border-bottom-right-radius: 30px;
