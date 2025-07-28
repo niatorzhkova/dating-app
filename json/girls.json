@@ -2,7 +2,7 @@
   "girls": [
     {
       "id": 1,
-      "photo": "../img/1.jpg",
+      "photo": "/img/1.jpg",
       "name": "Алина",
       "occupation": "Фотограф",
       "km": "2км",
@@ -11,7 +11,7 @@
     },
     {
       "id": 2,
-      "photo": "../img/2.jpg",
+      "photo": "/img/2.jpg",
       "name": "Виктория",
       "occupation": "Финансовый аналитик",
       "km": "1км",
@@ -20,7 +20,7 @@
     },
     {
       "id": 3,
-      "photo": "../img/3.jpg",
+      "photo": "/img/3.jpg",
       "name": "Елизавета",
       "occupation": "Дизайнер интерьеров",
       "km": "3км",
@@ -29,7 +29,7 @@
     },
     {
       "id": 4,
-      "photo": "../img/4.jpg",
+      "photo": "/img/4.jpg",
       "name": "Анна",
       "occupation": "Нутрициолог",
       "km": "5км",
@@ -38,7 +38,7 @@
     },
     {
       "id": 5,
-      "photo": "../img/5.jpg",
+      "photo": "/img/5.jpg",
       "name": "София",
       "occupation": "Художница",
       "km": "4км",
@@ -47,7 +47,7 @@
     },
     {
       "id": 6,
-      "photo": "../img/6.jpg",
+      "photo": "/img/6.jpg",
       "name": "Мария",
       "occupation": "Психолог",
       "km": "1км",
@@ -56,7 +56,7 @@
     },
     {
       "id": 7,
-      "photo": "../img/7.jpg",
+      "photo": "/img/7.jpg",
       "name": "Ксения",
       "occupation": "PR-менеджер",
       "km": "10км",
