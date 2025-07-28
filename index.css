@@ -186,7 +186,7 @@ button {
 .button.like {
   width: 90px;
   height: 90px;
-  background-color: #fd9584;
+  background-color: #fff;
   transition: background-color 0.3s ease;
 }
 
@@ -343,11 +343,11 @@ html {
 }
 
 .button.like.active {
-  background-color: #fff;
+  background-color: #fd9584;
 }
 
 .button.like.active button svg path {
-  fill: #fd9584;
+  fill: #fff;
 }
 
 .heart-btn {
