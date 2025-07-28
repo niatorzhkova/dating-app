@@ -309,12 +309,7 @@ html {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-}
-
-.owl-stage-outer,
-.owl-stage,
-.owl-item {
-  height: 100%;
+  background: #fff;
 }
 
 .heart-fountain {
@@ -370,18 +365,6 @@ html {
   z-index: 1000;
 }
 
-.owl-carousel {
-  position: relative;
-}
-
-.owl-carousel::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 1px;
-  background: inherit;
-  z-index: 1000;
-  pointer-events: none;
+.swiper {
+  width: 100%;
 }

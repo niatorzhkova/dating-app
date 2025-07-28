@@ -4,9 +4,10 @@ $.getJSON("./json/girls.json", function (data) {
 
     for (let index = 0; index < data.girls.length; index++) {
       template += `
-                               <li class="girls__item">
+          <div class="swiper-slide">
+                               <div class="girls__item">
                                           <div class="top">
-                    <img src="${data.girls[index].photo}" onload="this.classList.add('loaded')" />
+                    <img src="${data.girls[index].photo}"  />
                 </div>
           <div class="middle">
             <div class="button__container">
@@ -74,33 +75,40 @@ $.getJSON("./json/girls.json", function (data) {
                 <div class="badge">${data.girls[index].interests[2]}</div>
               </div>
             </div>
-          </div></li>
+          </div></div>
+           </div>
          `;
     }
-    document.querySelector(".girls__list").innerHTML = template;
+    document.querySelector(".swiper-wrapper").innerHTML = template;
   }
 
   mapQuestionnaire();
 
-  var owl = $(".girls__list");
-  owl.owlCarousel({
-    margin: 0,
-    dots: false,
-    touchDrag: true,
-    smartSpeed: 450,
-    dragEndSpeed: 450,
-    lazyLoadEager: 3,
-    animateOut: "fadeOut",
-    responsive: {
-      0: {
-        items: 1,
-      },
-    },
+  const swiper = new Swiper(".swiper", {
+    // Swiper configuration
+    slidesPerView: 1,
+    spaceBetween: 0,
+    centeredSlides: true,
+    preloadImages: true,
+    resistance: true,
+    resistanceRatio: 0.85,
+
+    // iOS-specific fixes
+    edgeSwipeDetection: true,
+    iOSEdgeSwipeDetection: true,
+
+    // Smooth transitions
+    speed: 300,
+    followFinger: false,
+    perSlideOffset: 1,
+    perSlideRotate: 1,
+    rotate: true,
+    effect: "cards",
   });
 
   $(".heart-btn").click(function () {
     setTimeout(() => {
-      owl.trigger("next.owl.carousel");
+      swiper.slideNext();
     }, 500);
   });
 });
