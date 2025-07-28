@@ -5,9 +5,9 @@ $.getJSON("./json/girls.json", function (data) {
     for (let index = 0; index < data.girls.length; index++) {
       template += `
                                <li class="girls__item">
-                                         <div class="top">
-            <img src="${data.girls[index].photo}" />
-          </div>
+                                          <div class="top">
+                    <img src="${data.girls[index].photo}" onload="this.classList.add('loaded')" />
+                </div>
           <div class="middle">
             <div class="button__container">
               <div class="button">
@@ -87,12 +87,28 @@ $.getJSON("./json/girls.json", function (data) {
     margin: 0,
     dots: false,
     touchDrag: true,
+    smartSpeed: 350,
+    dragEndSpeed: 350,
     responsive: {
       0: {
         items: 1,
       },
     },
+    onInitialize: function () {
+      $(".owl-stage").css({
+        display: "flex",
+        transform: "translate3d(0px,0px,0px)",
+      });
+    },
   });
+
+  owl
+    .on("drag.owl.carousel", function (e) {
+      $(".owl-stage").css("transition", "none");
+    })
+    .on("dragged.owl.carousel", function (e) {
+      $(".owl-stage").css("transition", "");
+    });
 
   $(".heart-btn").click(function () {
     setTimeout(() => {
