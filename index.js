@@ -1,4 +1,4 @@
-$.getJSON("../json/girls.json", function (data) {
+$.getJSON("./json/girls.json", function (data) {
   function mapQuestionnaire() {
     let template = "";
 
