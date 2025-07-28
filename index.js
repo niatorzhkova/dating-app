@@ -87,28 +87,14 @@ $.getJSON("./json/girls.json", function (data) {
     margin: 0,
     dots: false,
     touchDrag: true,
-    smartSpeed: 350,
-    dragEndSpeed: 350,
+    smartSpeed: 300,
+    dragEndSpeed: 300,
     responsive: {
       0: {
         items: 1,
       },
     },
-    onInitialize: function () {
-      $(".owl-stage").css({
-        display: "flex",
-        transform: "translate3d(0px,0px,0px)",
-      });
-    },
   });
-
-  owl
-    .on("drag.owl.carousel", function (e) {
-      $(".owl-stage").css("transition", "none");
-    })
-    .on("dragged.owl.carousel", function (e) {
-      $(".owl-stage").css("transition", "");
-    });
 
   $(".heart-btn").click(function () {
     setTimeout(() => {
