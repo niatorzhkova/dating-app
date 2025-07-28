@@ -93,6 +93,10 @@ $.getJSON("./json/girls.json", function (data) {
       },
     },
   });
+
+  $(".heart-btn").click(function () {
+    owl.trigger("next.owl.carousel");
+  });
 });
 $(document).ready(function () {
   $(document).on("click", ".heart-btn", function (e) {
