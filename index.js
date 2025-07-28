@@ -87,9 +87,8 @@ $.getJSON("./json/girls.json", function (data) {
     margin: 0,
     dots: false,
     touchDrag: true,
-    smartSpeed: 300,
-    dragEndSpeed: 400,
-    loop: true,
+    smartSpeed: 450,
+    dragEndSpeed: 450,
     lazyLoadEager: 3,
     animateOut: "fadeOut",
     responsive: {
