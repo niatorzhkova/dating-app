@@ -25,7 +25,7 @@ $.getJSON("./json/girls.json", function (data) {
                 </button>
               </div>
               <div class="button like">
-                <button class="like heart-btn">
+                <button class="heart-btn">
                   <svg
                     viewBox="0 0 24 24"
                     fill="none"
@@ -95,13 +95,18 @@ $.getJSON("./json/girls.json", function (data) {
   });
 
   $(".heart-btn").click(function () {
-    owl.trigger("next.owl.carousel");
+    setTimeout(() => {
+      owl.trigger("next.owl.carousel");
+    }, 500);
   });
 });
 $(document).ready(function () {
+  $(document).on("click", ".button.like", function () {
+    $(this).toggleClass("active");
+  });
   $(document).on("click", ".heart-btn", function (e) {
     e.preventDefault();
-    e.stopPropagation();
+    // e.stopPropagation();
 
     var $btn = $(this);
 
