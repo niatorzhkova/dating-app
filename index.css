@@ -119,6 +119,7 @@ body {
   line-height: 1;
   position: fixed;
   overflow: hidden;
+  overscroll-behavior-y: contain;
 }
 
 /* Remove default list styles */
